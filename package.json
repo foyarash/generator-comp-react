@@ -1,5 +1,5 @@
 {
-  "name": "react-generator",
+  "name": "generator-comp-react",
   "version": "1.0.0",
   "description":
     "Command line tool for React / React Native to generate components",
