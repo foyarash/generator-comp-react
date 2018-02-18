@@ -1,16 +1,14 @@
 {
   "name": "generator-comp-react",
   "version": "1.0.1",
-  "description": "Command line tool for React / React Native to generate components",
+  "description":
+    "Command line tool for React / React Native to generate components",
   "main": "index.js",
   "author": "Foyarash",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "mustache": "^2.3.0"
-  },
-  "generator": {
-    "options": {}
   },
   "bin": {
     "generator-comp-react": "./index.js"
