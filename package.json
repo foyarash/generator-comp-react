@@ -1,8 +1,7 @@
 {
   "name": "generator-comp-react",
-  "version": "1.0.2",
-  "description":
-    "Command line tool for React / React Native to generate components",
+  "version": "1.0.3",
+  "description": "Command line tool for React / React Native to generate components",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/foyarash/generator-comp-react.git"
