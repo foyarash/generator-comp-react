@@ -14,6 +14,6 @@
     "options": {}
   },
   "bin": {
-    "react-generator": "./index.js"
+    "generator-comp-react": "./index.js"
   }
 }

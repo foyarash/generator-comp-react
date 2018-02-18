@@ -14,6 +14,7 @@ or
 
 ## Options
 
+* `-H or --help` : displays the usage
 * `--componentPath` : defaults to `./src/components`. Root folder of the components location.
 * `--containerPath` : defaults to `./src/containers`. Root folder of the containers location.
 * `--functional=true|false` : defaults to `false`. If true, creates a functional component.

@@ -9,6 +9,43 @@ require.extensions['.tpl'] = function(module, filename) {
   module.exports = fs.readFileSync(filename, 'utf8');
 };
 
+if (process.argv.includes('-H') || process.argv.includes('--help')) {
+  console.log('Usage: generator-comp-react [options...]');
+  console.log('Options:');
+  console.log(
+    '--componentPath=<path> : defaults to ./src/components. Root folder of the components location'
+  );
+  console.log(
+    '--containerPath=<path> : defaults to ./src/containers. Root folder of the containers location.'
+  );
+  console.log(
+    '--functional=true|false : defaults to false. If true, creates a functional component.'
+  );
+  console.log(
+    '--pure=true|false : defaults to true. If true, extends PureComponent instead of Component.'
+  );
+  console.log(
+    "--container=true|false : defaults to false. If true, creates a redux connected component. The functional option won't be used in that case. Creates the associated component in the componentPath location."
+  );
+  console.log(
+    '--withRedux=true|false : defaults to false. If true, connect the component with redux. Defaults to true when container is true'
+  );
+  console.log(
+    '--native=true|false : defaults to false. If true, imports the basic stuff from react-native (View, StyleSheet), renders a View instead of a div, and creates a basic StyleSheet. When native is false, a separate css file is created.'
+  );
+  console.log(
+    '--name=ComponentName : defaults to MyComponent. Sets the component name. When container is set to true, will automatically suffix the name with Container, so for example MyAwesomeComponent will transform into MyAwesomeComponentContainer'
+  );
+  console.log(
+    '--withPropTypes=true|false : defaults to true. If set to true, imports the prop-types package and add the propTypes and defaultProps fields to the component.'
+  );
+  console.log(
+    "--separateDir=true|false : defaults to true. If set to true, will create a folder with the component's name, with an index.js, the component's file and its css (if not native). If set to false, will just create the component's file and its css into the componentPath folder."
+  );
+
+  return;
+}
+
 const pathCreate = p => {
   const dirname = path.dirname(p);
   if (fs.existsSync(dirname)) {
