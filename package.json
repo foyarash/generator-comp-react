@@ -1,0 +1,19 @@
+{
+  "name": "react-generator",
+  "version": "1.0.0",
+  "description":
+    "Command line tool for React / React Native to generate components",
+  "main": "index.js",
+  "author": "Foyarash",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "mustache": "^2.3.0"
+  },
+  "generator": {
+    "options": {}
+  },
+  "bin": {
+    "react-generator": "./index.js"
+  }
+}
