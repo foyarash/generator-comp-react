@@ -2,15 +2,15 @@ React generator is a simple command line tool to generate React and React Native
 
 ## Install
 
-`npm install -g react-generator`
+`npm install -g generator-comp-react`
 
 or
 
-`yarn global add react-generator`
+`yarn global add generator-comp-react`
 
 ## Usage
 
-`react-generate [options...]`
+`generator-comp-react [options...]`
 
 ## Options
 
