@@ -24,14 +24,11 @@ const booleanKeys = [
 const stringKeys = ['componentPath', 'containerPath', 'name'];
 
 const parser = args => {
-  console.log(args);
   args.map(arg => {
     if (arg[0] === '-' && arg[1] === '-') {
       arg = arg.substring(2, arg.length);
-      console.log('arg', arg);
       if (/[a-zA-Z]+={1}(\W|(true|false)|[a-zA-Z])+/.test(arg)) {
         const [key, value] = arg.split('=');
-        console.log('key, value', key, value);
 
         if (
           booleanKeys.includes(key) &&
